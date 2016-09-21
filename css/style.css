@@ -1,19 +1,16 @@
-
 p {
 	font-family: "LucidaGrande", sans-serif;
 	text-align:center;
 }
 
-button
-{
+button {
 	font-family: "LucidaGrande", sans-serif;
 	font-size:12px;
 	border:1px solid;
 	height:20px;
 }
 
-input[type=text]
-{
+input[type=text] {
 	height:12px;
 }
 
