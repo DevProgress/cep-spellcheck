@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ExtensionManifest Version="4.0" ExtensionBundleId="com.adobe.PProPanel" ExtensionBundleVersion="1.0.1"
-ExtensionBundleName="Spellcheck" 
+<ExtensionManifest Version="4.0" ExtensionBundleId="com.example.spellcheck" ExtensionBundleVersion="1.0"
+ExtensionBundleName="Spell Check" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ExtensionList>
-		<Extension Id="com.adobe.PProPanel" Version="10.3.0" />
+		<Extension Id="com.example.spellcheck" Version="1.0" />
 	</ExtensionList>
 	<ExecutionEnvironment>
 		<HostList>
-			<Host Name="PPRO" Version="[9.1,11.9]" />
+			<Host Name="PPRO" Version="[9.1,10.9]" />
 		</HostList>
 		<LocaleList>
 			<Locale Code="All" />
@@ -18,27 +18,20 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	</ExecutionEnvironment>
 
 	<DispatchInfoList>
-		<Extension Id="com.adobe.PProPanel">
+		<Extension Id="com.example.spellcheck">
 			<DispatchInfo >
 				<Resources>
 					<MainPath>./index.html</MainPath>
-					<ScriptPath>./PProPanel.jsx</ScriptPath>
+					
 				</Resources>
-				<Lifecycle>
-					<AutoVisible>true</AutoVisible>
-				</Lifecycle>
-				<CEFCommandLine>
-				    <Parameter>--allow-file-access</Parameter>
-				    <Parameter>--allow-file-access-from-files</Parameter>
-					<Parameter>--enable-nodejs</Parameter>
-				</CEFCommandLine>
+				
 				<UI>
 					<Type>Panel</Type>
-					<Menu>Spellcheck</Menu>
+					<Menu>Spellcheck Textbox</Menu>
 					<Geometry>
 						<Size>
-							<Height>300</Height>
-							<Width>180</Width>
+							<Height>400</Height>
+							<Width>550</Width>
 						</Size>
 					</Geometry>
 				</UI>
